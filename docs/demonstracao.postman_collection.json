@@ -1,0 +1,529 @@
+{
+  "info": {
+    "name": "Atividade - Cache de conteúdos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Execute manualmente as pastas na ordem. No cenário TTL, aguarde 61 segundos antes da terceira consulta. Compare X-Cache, tempo da resposta e logs da aplicação."
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    },
+    {
+      "key": "id1",
+      "value": ""
+    },
+    {
+      "key": "id2",
+      "value": ""
+    },
+    {
+      "key": "id3",
+      "value": ""
+    },
+    {
+      "key": "id4",
+      "value": ""
+    },
+    {
+      "key": "id5",
+      "value": ""
+    },
+    {
+      "key": "id6",
+      "value": ""
+    },
+    {
+      "key": "id7",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "01 - Cadastro",
+      "item": [
+        {
+          "name": "Cadastrar conteúdo 1",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/conteudos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Conteúdo 1\",\n  \"corpo\": \"Texto do conteúdo 1\",\n  \"autor\": \"Willian Batista\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    pm.collectionVariables.set('id1', pm.response.json().id);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Cadastrar conteúdo 2",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/conteudos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Conteúdo 2\",\n  \"corpo\": \"Texto do conteúdo 2\",\n  \"autor\": \"Willian Batista\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    pm.collectionVariables.set('id2', pm.response.json().id);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Cadastrar conteúdo 3",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/conteudos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Conteúdo 3\",\n  \"corpo\": \"Texto do conteúdo 3\",\n  \"autor\": \"Willian Batista\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    pm.collectionVariables.set('id3', pm.response.json().id);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Cadastrar conteúdo 4",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/conteudos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Conteúdo 4\",\n  \"corpo\": \"Texto do conteúdo 4\",\n  \"autor\": \"Willian Batista\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    pm.collectionVariables.set('id4', pm.response.json().id);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Cadastrar conteúdo 5",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/conteudos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Conteúdo 5\",\n  \"corpo\": \"Texto do conteúdo 5\",\n  \"autor\": \"Willian Batista\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    pm.collectionVariables.set('id5', pm.response.json().id);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Cadastrar conteúdo 6",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/conteudos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Conteúdo 6\",\n  \"corpo\": \"Texto do conteúdo 6\",\n  \"autor\": \"Willian Batista\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    pm.collectionVariables.set('id6', pm.response.json().id);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Cadastrar conteúdo 7",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/conteudos",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Conteúdo 7\",\n  \"corpo\": \"Texto do conteúdo 7\",\n  \"autor\": \"Willian Batista\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    pm.collectionVariables.set('id7', pm.response.json().id);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "02 - MISS e HIT",
+      "item": [
+        {
+          "name": "Limpar entradas do cache",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/cache"
+          }
+        },
+        {
+          "name": "Primeira consulta - MISS",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id1}}"
+          }
+        },
+        {
+          "name": "Segunda consulta - HIT",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id1}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "03 - Limite e LRU",
+      "item": [
+        {
+          "name": "Carregar conteúdo 2 - MISS",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id2}}"
+          }
+        },
+        {
+          "name": "Carregar conteúdo 3 - MISS",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id3}}"
+          }
+        },
+        {
+          "name": "Carregar conteúdo 4 - MISS",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id4}}"
+          }
+        },
+        {
+          "name": "Carregar conteúdo 5 - MISS",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id5}}"
+          }
+        },
+        {
+          "name": "Conferir tamanho 5",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/cache/estatisticas"
+          }
+        },
+        {
+          "name": "Acessar conteúdo 1 novamente - HIT",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id1}}"
+          }
+        },
+        {
+          "name": "Carregar conteúdo 6 - remove conteúdo 2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id6}}"
+          }
+        },
+        {
+          "name": "Conferir limite e eviction",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/cache/estatisticas"
+          }
+        },
+        {
+          "name": "Conteúdo 1 foi preservado - HIT",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id1}}"
+          }
+        },
+        {
+          "name": "Conteúdo 2 foi removido - MISS",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id2}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "04 - TTL",
+      "item": [
+        {
+          "name": "Carregar conteúdo 7 - MISS",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id7}}"
+          }
+        },
+        {
+          "name": "Confirmar conteúdo 7 - HIT",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id7}}"
+          }
+        },
+        {
+          "name": "Aguardar 61 segundos e consultar - MISS",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id7}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "05 - Atualização",
+      "item": [
+        {
+          "name": "Atualizar conteúdo 7 e invalidar cache",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/conteudos/{{id7}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"titulo\": \"Conteúdo 7 atualizado\",\n  \"corpo\": \"Texto alterado pelo autor\",\n  \"autor\": \"Willian Batista\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Consultar após PUT - MISS e texto novo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id7}}"
+          }
+        },
+        {
+          "name": "Repetir consulta - HIT",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id7}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "06 - Estatísticas finais",
+      "item": [
+        {
+          "name": "Consultar estatísticas finais",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/cache/estatisticas"
+          }
+        }
+      ]
+    },
+    {
+      "name": "07 - Exclusão e limpeza",
+      "item": [
+        {
+          "name": "Excluir conteúdo 7",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id7}}"
+          }
+        },
+        {
+          "name": "Consultar excluído - 404",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/conteudos/{{id7}}"
+          }
+        },
+        {
+          "name": "Limpar cache",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{baseUrl}}/cache"
+          }
+        },
+        {
+          "name": "Conferir tamanho zero",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/cache/estatisticas"
+          }
+        }
+      ]
+    }
+  ]
+}

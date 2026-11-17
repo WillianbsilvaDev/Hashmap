@@ -1,0 +1,837 @@
+{
+  "autor": "Willian Batista",
+  "springBoot": "4.0.9",
+  "origem": "Requisições HTTP reais executadas automaticamente a partir da coleção Postman existente.",
+  "capturasPostmanInsomnia": false,
+  "limitacao": "Postman e Insomnia não foram encontrados no inventário de aplicativos, no menu de aplicativos nem nos registros de instalação. Este registro não contém prints dessas ferramentas.",
+  "inicio": "2026-11-16T23:29:51.774958-03:00",
+  "esperaTtlSegundos": 61.016,
+  "requisicoes": [
+    {
+      "etapa": "01 - Cadastro",
+      "nome": "Cadastrar conteúdo 1",
+      "metodo": "POST",
+      "url": "http://127.0.0.1:18080/conteudos",
+      "inicio": "2026-11-16T23:29:51.776167-03:00",
+      "fim": "2026-11-16T23:29:52.523529-03:00",
+      "tempoMs": 746.99,
+      "status": 201,
+      "cabecalhosEnviados": {
+        "Content-Type": "application/json"
+      },
+      "corpoEnviado": {
+        "titulo": "Conteúdo 1",
+        "corpo": "Texto do conteúdo 1",
+        "autor": "Willian Batista"
+      },
+      "cabecalhosRecebidos": {
+        "Location": "/conteudos/1",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:52 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 1,
+        "titulo": "Conteúdo 1",
+        "corpo": "Texto do conteúdo 1",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.1949542"
+      }
+    },
+    {
+      "etapa": "01 - Cadastro",
+      "nome": "Cadastrar conteúdo 2",
+      "metodo": "POST",
+      "url": "http://127.0.0.1:18080/conteudos",
+      "inicio": "2026-11-16T23:29:52.525528-03:00",
+      "fim": "2026-11-16T23:29:52.538069-03:00",
+      "tempoMs": 12.29,
+      "status": 201,
+      "cabecalhosEnviados": {
+        "Content-Type": "application/json"
+      },
+      "corpoEnviado": {
+        "titulo": "Conteúdo 2",
+        "corpo": "Texto do conteúdo 2",
+        "autor": "Willian Batista"
+      },
+      "cabecalhosRecebidos": {
+        "Location": "/conteudos/2",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:52 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 2,
+        "titulo": "Conteúdo 2",
+        "corpo": "Texto do conteúdo 2",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.5305303"
+      }
+    },
+    {
+      "etapa": "01 - Cadastro",
+      "nome": "Cadastrar conteúdo 3",
+      "metodo": "POST",
+      "url": "http://127.0.0.1:18080/conteudos",
+      "inicio": "2026-11-16T23:29:52.540219-03:00",
+      "fim": "2026-11-16T23:29:52.549309-03:00",
+      "tempoMs": 9.65,
+      "status": 201,
+      "cabecalhosEnviados": {
+        "Content-Type": "application/json"
+      },
+      "corpoEnviado": {
+        "titulo": "Conteúdo 3",
+        "corpo": "Texto do conteúdo 3",
+        "autor": "Willian Batista"
+      },
+      "cabecalhosRecebidos": {
+        "Location": "/conteudos/3",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:52 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 3,
+        "titulo": "Conteúdo 3",
+        "corpo": "Texto do conteúdo 3",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.5453125"
+      }
+    },
+    {
+      "etapa": "01 - Cadastro",
+      "nome": "Cadastrar conteúdo 4",
+      "metodo": "POST",
+      "url": "http://127.0.0.1:18080/conteudos",
+      "inicio": "2026-11-16T23:29:52.551307-03:00",
+      "fim": "2026-11-16T23:29:52.558875-03:00",
+      "tempoMs": 8.01,
+      "status": 201,
+      "cabecalhosEnviados": {
+        "Content-Type": "application/json"
+      },
+      "corpoEnviado": {
+        "titulo": "Conteúdo 4",
+        "corpo": "Texto do conteúdo 4",
+        "autor": "Willian Batista"
+      },
+      "cabecalhosRecebidos": {
+        "Location": "/conteudos/4",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:52 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 4,
+        "titulo": "Conteúdo 4",
+        "corpo": "Texto do conteúdo 4",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.5554049"
+      }
+    },
+    {
+      "etapa": "01 - Cadastro",
+      "nome": "Cadastrar conteúdo 5",
+      "metodo": "POST",
+      "url": "http://127.0.0.1:18080/conteudos",
+      "inicio": "2026-11-16T23:29:52.560972-03:00",
+      "fim": "2026-11-16T23:29:52.569972-03:00",
+      "tempoMs": 9.45,
+      "status": 201,
+      "cabecalhosEnviados": {
+        "Content-Type": "application/json"
+      },
+      "corpoEnviado": {
+        "titulo": "Conteúdo 5",
+        "corpo": "Texto do conteúdo 5",
+        "autor": "Willian Batista"
+      },
+      "cabecalhosRecebidos": {
+        "Location": "/conteudos/5",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:52 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 5,
+        "titulo": "Conteúdo 5",
+        "corpo": "Texto do conteúdo 5",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.5659748"
+      }
+    },
+    {
+      "etapa": "01 - Cadastro",
+      "nome": "Cadastrar conteúdo 6",
+      "metodo": "POST",
+      "url": "http://127.0.0.1:18080/conteudos",
+      "inicio": "2026-11-16T23:29:52.572843-03:00",
+      "fim": "2026-11-16T23:29:52.581487-03:00",
+      "tempoMs": 8.82,
+      "status": 201,
+      "cabecalhosEnviados": {
+        "Content-Type": "application/json"
+      },
+      "corpoEnviado": {
+        "titulo": "Conteúdo 6",
+        "corpo": "Texto do conteúdo 6",
+        "autor": "Willian Batista"
+      },
+      "cabecalhosRecebidos": {
+        "Location": "/conteudos/6",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:52 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 6,
+        "titulo": "Conteúdo 6",
+        "corpo": "Texto do conteúdo 6",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.5772517"
+      }
+    },
+    {
+      "etapa": "01 - Cadastro",
+      "nome": "Cadastrar conteúdo 7",
+      "metodo": "POST",
+      "url": "http://127.0.0.1:18080/conteudos",
+      "inicio": "2026-11-16T23:29:52.583618-03:00",
+      "fim": "2026-11-16T23:29:52.593025-03:00",
+      "tempoMs": 9.56,
+      "status": 201,
+      "cabecalhosEnviados": {
+        "Content-Type": "application/json"
+      },
+      "corpoEnviado": {
+        "titulo": "Conteúdo 7",
+        "corpo": "Texto do conteúdo 7",
+        "autor": "Willian Batista"
+      },
+      "cabecalhosRecebidos": {
+        "Location": "/conteudos/7",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:52 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 7,
+        "titulo": "Conteúdo 7",
+        "corpo": "Texto do conteúdo 7",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.588028"
+      }
+    },
+    {
+      "etapa": "02 - MISS e HIT",
+      "nome": "Limpar entradas do cache",
+      "metodo": "DELETE",
+      "url": "http://127.0.0.1:18080/cache",
+      "inicio": "2026-11-16T23:29:52.596021-03:00",
+      "fim": "2026-11-16T23:29:52.602086-03:00",
+      "tempoMs": 6.38,
+      "status": 204,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "Date": "Tue, 17 Nov 2026 02:29:52 GMT",
+        "Connection": "close"
+      },
+      "resposta": null
+    },
+    {
+      "etapa": "02 - MISS e HIT",
+      "nome": "Primeira consulta - MISS",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/1",
+      "inicio": "2026-11-16T23:29:52.605083-03:00",
+      "fim": "2026-11-16T23:29:54.720642-03:00",
+      "tempoMs": 2116.06,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:54 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 1,
+        "titulo": "Conteúdo 1",
+        "corpo": "Texto do conteúdo 1",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.194954"
+      }
+    },
+    {
+      "etapa": "02 - MISS e HIT",
+      "nome": "Segunda consulta - HIT",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/1",
+      "inicio": "2026-11-16T23:29:54.722707-03:00",
+      "fim": "2026-11-16T23:29:54.731495-03:00",
+      "tempoMs": 8.01,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "HIT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:54 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 1,
+        "titulo": "Conteúdo 1",
+        "corpo": "Texto do conteúdo 1",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.194954"
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Carregar conteúdo 2 - MISS",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/2",
+      "inicio": "2026-11-16T23:29:54.732946-03:00",
+      "fim": "2026-11-16T23:29:56.767554-03:00",
+      "tempoMs": 2034.51,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:56 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 2,
+        "titulo": "Conteúdo 2",
+        "corpo": "Texto do conteúdo 2",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.53053"
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Carregar conteúdo 3 - MISS",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/3",
+      "inicio": "2026-11-16T23:29:56.771546-03:00",
+      "fim": "2026-11-16T23:29:58.787905-03:00",
+      "tempoMs": 2016.29,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:29:58 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 3,
+        "titulo": "Conteúdo 3",
+        "corpo": "Texto do conteúdo 3",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.545313"
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Carregar conteúdo 4 - MISS",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/4",
+      "inicio": "2026-11-16T23:29:58.789903-03:00",
+      "fim": "2026-11-16T23:30:00.808683-03:00",
+      "tempoMs": 2018.25,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:30:00 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 4,
+        "titulo": "Conteúdo 4",
+        "corpo": "Texto do conteúdo 4",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.555405"
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Carregar conteúdo 5 - MISS",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/5",
+      "inicio": "2026-11-16T23:30:00.811145-03:00",
+      "fim": "2026-11-16T23:30:02.827746-03:00",
+      "tempoMs": 2016.19,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:30:02 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 5,
+        "titulo": "Conteúdo 5",
+        "corpo": "Texto do conteúdo 5",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.565975"
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Conferir tamanho 5",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/cache/estatisticas",
+      "inicio": "2026-11-16T23:30:02.830486-03:00",
+      "fim": "2026-11-16T23:30:02.842730-03:00",
+      "tempoMs": 12.38,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "Content-Type": "application/json",
+        "Content-Length": "94",
+        "Date": "Tue, 17 Nov 2026 02:30:02 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "tamanhoAtual": 5,
+        "limite": 5,
+        "hits": 1,
+        "misses": 5,
+        "evictions": 0,
+        "hitRatio": 0.16666666666666666
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Acessar conteúdo 1 novamente - HIT",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/1",
+      "inicio": "2026-11-16T23:30:02.860270-03:00",
+      "fim": "2026-11-16T23:30:02.866595-03:00",
+      "tempoMs": 6.69,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "HIT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:30:02 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 1,
+        "titulo": "Conteúdo 1",
+        "corpo": "Texto do conteúdo 1",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.194954"
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Carregar conteúdo 6 - remove conteúdo 2",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/6",
+      "inicio": "2026-11-16T23:30:02.868585-03:00",
+      "fim": "2026-11-16T23:30:04.921280-03:00",
+      "tempoMs": 2052.89,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:30:04 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 6,
+        "titulo": "Conteúdo 6",
+        "corpo": "Texto do conteúdo 6",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.577252"
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Conferir limite e eviction",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/cache/estatisticas",
+      "inicio": "2026-11-16T23:30:04.924548-03:00",
+      "fim": "2026-11-16T23:30:04.929556-03:00",
+      "tempoMs": 4.89,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "Content-Type": "application/json",
+        "Content-Length": "79",
+        "Date": "Tue, 17 Nov 2026 02:30:04 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "tamanhoAtual": 5,
+        "limite": 5,
+        "hits": 2,
+        "misses": 6,
+        "evictions": 1,
+        "hitRatio": 0.25
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Conteúdo 1 foi preservado - HIT",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/1",
+      "inicio": "2026-11-16T23:30:04.932061-03:00",
+      "fim": "2026-11-16T23:30:04.939367-03:00",
+      "tempoMs": 6.95,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "HIT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:30:04 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 1,
+        "titulo": "Conteúdo 1",
+        "corpo": "Texto do conteúdo 1",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.194954"
+      }
+    },
+    {
+      "etapa": "03 - Limite e LRU",
+      "nome": "Conteúdo 2 foi removido - MISS",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/2",
+      "inicio": "2026-11-16T23:30:04.942377-03:00",
+      "fim": "2026-11-16T23:30:06.955427-03:00",
+      "tempoMs": 2012.51,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:30:06 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 2,
+        "titulo": "Conteúdo 2",
+        "corpo": "Texto do conteúdo 2",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.53053"
+      }
+    },
+    {
+      "etapa": "04 - TTL",
+      "nome": "Carregar conteúdo 7 - MISS",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/7",
+      "inicio": "2026-11-16T23:30:06.957421-03:00",
+      "fim": "2026-11-16T23:30:08.979551-03:00",
+      "tempoMs": 2021.36,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:30:08 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 7,
+        "titulo": "Conteúdo 7",
+        "corpo": "Texto do conteúdo 7",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.588028"
+      }
+    },
+    {
+      "etapa": "04 - TTL",
+      "nome": "Confirmar conteúdo 7 - HIT",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/7",
+      "inicio": "2026-11-16T23:30:08.982551-03:00",
+      "fim": "2026-11-16T23:30:08.990898-03:00",
+      "tempoMs": 7.9,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "HIT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:30:08 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 7,
+        "titulo": "Conteúdo 7",
+        "corpo": "Texto do conteúdo 7",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.588028"
+      }
+    },
+    {
+      "etapa": "04 - TTL",
+      "nome": "Aguardar 61 segundos e consultar - MISS",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/7",
+      "inicio": "2026-11-16T23:31:10.022684-03:00",
+      "fim": "2026-11-16T23:31:12.036432-03:00",
+      "tempoMs": 2013.39,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:31:12 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 7,
+        "titulo": "Conteúdo 7",
+        "corpo": "Texto do conteúdo 7",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:29:52.588028"
+      }
+    },
+    {
+      "etapa": "05 - Atualização",
+      "nome": "Atualizar conteúdo 7 e invalidar cache",
+      "metodo": "PUT",
+      "url": "http://127.0.0.1:18080/conteudos/7",
+      "inicio": "2026-11-16T23:31:12.041450-03:00",
+      "fim": "2026-11-16T23:31:12.081899-03:00",
+      "tempoMs": 39.82,
+      "status": 200,
+      "cabecalhosEnviados": {
+        "Content-Type": "application/json"
+      },
+      "corpoEnviado": {
+        "titulo": "Conteúdo 7 atualizado",
+        "corpo": "Texto alterado pelo autor",
+        "autor": "Willian Batista"
+      },
+      "cabecalhosRecebidos": {
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:31:12 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 7,
+        "titulo": "Conteúdo 7 atualizado",
+        "corpo": "Texto alterado pelo autor",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:31:12.0494605"
+      }
+    },
+    {
+      "etapa": "05 - Atualização",
+      "nome": "Consultar após PUT - MISS e texto novo",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/7",
+      "inicio": "2026-11-16T23:31:12.084400-03:00",
+      "fim": "2026-11-16T23:31:14.106686-03:00",
+      "tempoMs": 2021.86,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "MISS",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:31:14 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 7,
+        "titulo": "Conteúdo 7 atualizado",
+        "corpo": "Texto alterado pelo autor",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:31:12.049461"
+      }
+    },
+    {
+      "etapa": "05 - Atualização",
+      "nome": "Repetir consulta - HIT",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/7",
+      "inicio": "2026-11-16T23:31:14.109687-03:00",
+      "fim": "2026-11-16T23:31:14.115725-03:00",
+      "tempoMs": 6.95,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "X-Cache": "HIT",
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:31:14 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "id": 7,
+        "titulo": "Conteúdo 7 atualizado",
+        "corpo": "Texto alterado pelo autor",
+        "autor": "Willian Batista",
+        "atualizadoEm": "2026-11-16T23:31:12.049461"
+      }
+    },
+    {
+      "etapa": "06 - Estatísticas finais",
+      "nome": "Consultar estatísticas finais",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/cache/estatisticas",
+      "inicio": "2026-11-16T23:31:14.119235-03:00",
+      "fim": "2026-11-16T23:31:14.123966-03:00",
+      "tempoMs": 4.79,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "Content-Type": "application/json",
+        "Content-Length": "94",
+        "Date": "Tue, 17 Nov 2026 02:31:14 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "tamanhoAtual": 1,
+        "limite": 5,
+        "hits": 5,
+        "misses": 10,
+        "evictions": 3,
+        "hitRatio": 0.3333333333333333
+      }
+    },
+    {
+      "etapa": "07 - Exclusão e limpeza",
+      "nome": "Excluir conteúdo 7",
+      "metodo": "DELETE",
+      "url": "http://127.0.0.1:18080/conteudos/7",
+      "inicio": "2026-11-16T23:31:14.126990-03:00",
+      "fim": "2026-11-16T23:31:14.158883-03:00",
+      "tempoMs": 31.84,
+      "status": 204,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "Date": "Tue, 17 Nov 2026 02:31:14 GMT",
+        "Connection": "close"
+      },
+      "resposta": null
+    },
+    {
+      "etapa": "07 - Exclusão e limpeza",
+      "nome": "Consultar excluído - 404",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/conteudos/7",
+      "inicio": "2026-11-16T23:31:14.162873-03:00",
+      "fim": "2026-11-16T23:31:16.237996-03:00",
+      "tempoMs": 2075.29,
+      "status": 404,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "Content-Type": "application/json",
+        "Transfer-Encoding": "chunked",
+        "Date": "Tue, 17 Nov 2026 02:31:16 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "timestamp": "2026-11-17T02:31:16.227Z",
+        "status": 404,
+        "error": "Not Found",
+        "path": "/conteudos/7"
+      }
+    },
+    {
+      "etapa": "07 - Exclusão e limpeza",
+      "nome": "Limpar cache",
+      "metodo": "DELETE",
+      "url": "http://127.0.0.1:18080/cache",
+      "inicio": "2026-11-16T23:31:16.241984-03:00",
+      "fim": "2026-11-16T23:31:16.247646-03:00",
+      "tempoMs": 5.3,
+      "status": 204,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "Date": "Tue, 17 Nov 2026 02:31:16 GMT",
+        "Connection": "close"
+      },
+      "resposta": null
+    },
+    {
+      "etapa": "07 - Exclusão e limpeza",
+      "nome": "Conferir tamanho zero",
+      "metodo": "GET",
+      "url": "http://127.0.0.1:18080/cache/estatisticas",
+      "inicio": "2026-11-16T23:31:16.251033-03:00",
+      "fim": "2026-11-16T23:31:16.257144-03:00",
+      "tempoMs": 6.74,
+      "status": 200,
+      "cabecalhosEnviados": {},
+      "corpoEnviado": null,
+      "cabecalhosRecebidos": {
+        "Content-Type": "application/json",
+        "Content-Length": "82",
+        "Date": "Tue, 17 Nov 2026 02:31:16 GMT",
+        "Connection": "close"
+      },
+      "resposta": {
+        "tamanhoAtual": 0,
+        "limite": 5,
+        "hits": 5,
+        "misses": 11,
+        "evictions": 3,
+        "hitRatio": 0.3125
+      }
+    }
+  ],
+  "concluido": true,
+  "fim": "2026-11-16T23:31:16.260145-03:00"
+}

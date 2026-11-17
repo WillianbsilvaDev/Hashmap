@@ -1,0 +1,50 @@
+2026-11-16T23:29:25.497-03:00  INFO 9140 --- [hashMap] [main] s.sptech.hashMap.HashMapApplication      : Starting HashMapApplication v0.0.1-SNAPSHOT using Java 21.0.13 with PID 9140 (C:\Users\windows\Downloads\SPTECH\backend\hashMap\target\hashMap-0.0.1-SNAPSHOT.jar started by windows in C:\Users\windows\Downloads\SPTECH\backend\hashMap)
+2026-11-16T23:29:25.507-03:00  INFO 9140 --- [hashMap] [main] s.sptech.hashMap.HashMapApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-11-16T23:29:27.023-03:00  INFO 9140 --- [hashMap] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-16T23:29:27.155-03:00  INFO 9140 --- [hashMap] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+2026-11-16T23:29:28.371-03:00  INFO 9140 --- [hashMap] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 18080 (http)
+2026-11-16T23:29:28.430-03:00  INFO 9140 --- [hashMap] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-16T23:29:28.431-03:00  INFO 9140 --- [hashMap] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-16T23:29:28.491-03:00  INFO 9140 --- [hashMap] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2848 ms
+2026-11-16T23:29:28.925-03:00  INFO 9140 --- [hashMap] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-16T23:29:29.044-03:00  INFO 9140 --- [hashMap] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.25.Final
+2026-11-16T23:29:30.113-03:00  INFO 9140 --- [hashMap] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-16T23:29:30.195-03:00  INFO 9140 --- [hashMap] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-16T23:29:30.568-03:00  INFO 9140 --- [hashMap] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:conteudos user=SA
+2026-11-16T23:29:30.574-03:00  INFO 9140 --- [hashMap] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-16T23:29:30.710-03:00  INFO 9140 --- [hashMap] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:conteudos]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CONTEUDOS/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-16T23:29:32.037-03:00  INFO 9140 --- [hashMap] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-16T23:29:32.119-03:00  INFO 9140 --- [hashMap] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-16T23:29:32.350-03:00  INFO 9140 --- [hashMap] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-16T23:29:33.421-03:00  INFO 9140 --- [hashMap] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 18080 (http) with context path '/'
+2026-11-16T23:29:33.453-03:00  INFO 9140 --- [hashMap] [main] s.sptech.hashMap.HashMapApplication      : Started HashMapApplication in 9.055 seconds (process running for 10.439)
+2026-11-16T23:29:51.951-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-16T23:29:51.952-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-16T23:29:51.955-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-11-16T23:29:54.715-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-9] s.s.hashMap.service.ConteudoService      : Busca MISS ID=1 tempo=2103 ms
+2026-11-16T23:29:54.727-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-10] s.s.hashMap.service.ConteudoService      : Busca HIT ID=1 tempo=0 ms
+2026-11-16T23:29:56.751-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-1] s.s.hashMap.service.ConteudoService      : Busca MISS ID=2 tempo=2014 ms
+2026-11-16T23:29:58.784-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-4] s.s.hashMap.service.ConteudoService      : Busca MISS ID=3 tempo=2005 ms
+2026-11-16T23:30:00.803-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-2] s.s.hashMap.service.ConteudoService      : Busca MISS ID=4 tempo=2010 ms
+2026-11-16T23:30:02.824-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-3] s.s.hashMap.service.ConteudoService      : Busca MISS ID=5 tempo=2007 ms
+2026-11-16T23:30:02.863-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-6] s.s.hashMap.service.ConteudoService      : Busca HIT ID=1 tempo=0 ms
+2026-11-16T23:30:04.919-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-7] s.s.hashMap.service.ConteudoService      : Busca MISS ID=6 tempo=2046 ms
+2026-11-16T23:30:04.936-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-9] s.s.hashMap.service.ConteudoService      : Busca HIT ID=1 tempo=0 ms
+2026-11-16T23:30:06.952-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-10] s.s.hashMap.service.ConteudoService      : Busca MISS ID=2 tempo=2005 ms
+2026-11-16T23:30:08.970-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-1] s.s.hashMap.service.ConteudoService      : Busca MISS ID=7 tempo=2008 ms
+2026-11-16T23:30:08.986-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-4] s.s.hashMap.service.ConteudoService      : Busca HIT ID=7 tempo=0 ms
+2026-11-16T23:31:12.032-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-2] s.s.hashMap.service.ConteudoService      : Busca MISS ID=7 tempo=2005 ms
+2026-11-16T23:31:14.102-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-5] s.s.hashMap.service.ConteudoService      : Busca MISS ID=7 tempo=2013 ms
+2026-11-16T23:31:14.112-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-6] s.s.hashMap.service.ConteudoService      : Busca HIT ID=7 tempo=0 ms
+2026-11-16T23:31:16.176-03:00  INFO 9140 --- [hashMap] [http-nio-127.0.0.1-18080-exec-9] s.s.hashMap.service.ConteudoService      : Busca MISS ID=7 tempo=2007 ms

@@ -1,0 +1,125 @@
+Demonstração automática - Willian Batista - trabalho individual
+Spring Boot 4.0.9; limite 5; TTL 60 segundos; fonte lenta 2 segundos.
+Coleção original: docs/demonstracao.postman_collection.json
+As requisições foram executadas por HTTP, sem interface gráfica do Postman/Insomnia.
+Início: 2026-11-16T23:29:51.774958-03:00
+
+01 - Cadastro
+2026-11-16T23:29:51.776167-03:00 | Cadastrar conteúdo 1
+POST http://127.0.0.1:18080/conteudos
+Enviado: {"titulo": "Conteúdo 1", "corpo": "Texto do conteúdo 1", "autor": "Willian Batista"}
+Recebido: {"status": 201, "X-Cache": null, "tempoMs": 746.99, "corpo": {"id": 1, "titulo": "Conteúdo 1", "corpo": "Texto do conteúdo 1", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.1949542"}}
+2026-11-16T23:29:52.525528-03:00 | Cadastrar conteúdo 2
+POST http://127.0.0.1:18080/conteudos
+Enviado: {"titulo": "Conteúdo 2", "corpo": "Texto do conteúdo 2", "autor": "Willian Batista"}
+Recebido: {"status": 201, "X-Cache": null, "tempoMs": 12.29, "corpo": {"id": 2, "titulo": "Conteúdo 2", "corpo": "Texto do conteúdo 2", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.5305303"}}
+2026-11-16T23:29:52.540219-03:00 | Cadastrar conteúdo 3
+POST http://127.0.0.1:18080/conteudos
+Enviado: {"titulo": "Conteúdo 3", "corpo": "Texto do conteúdo 3", "autor": "Willian Batista"}
+Recebido: {"status": 201, "X-Cache": null, "tempoMs": 9.65, "corpo": {"id": 3, "titulo": "Conteúdo 3", "corpo": "Texto do conteúdo 3", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.5453125"}}
+2026-11-16T23:29:52.551307-03:00 | Cadastrar conteúdo 4
+POST http://127.0.0.1:18080/conteudos
+Enviado: {"titulo": "Conteúdo 4", "corpo": "Texto do conteúdo 4", "autor": "Willian Batista"}
+Recebido: {"status": 201, "X-Cache": null, "tempoMs": 8.01, "corpo": {"id": 4, "titulo": "Conteúdo 4", "corpo": "Texto do conteúdo 4", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.5554049"}}
+2026-11-16T23:29:52.560972-03:00 | Cadastrar conteúdo 5
+POST http://127.0.0.1:18080/conteudos
+Enviado: {"titulo": "Conteúdo 5", "corpo": "Texto do conteúdo 5", "autor": "Willian Batista"}
+Recebido: {"status": 201, "X-Cache": null, "tempoMs": 9.45, "corpo": {"id": 5, "titulo": "Conteúdo 5", "corpo": "Texto do conteúdo 5", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.5659748"}}
+2026-11-16T23:29:52.572843-03:00 | Cadastrar conteúdo 6
+POST http://127.0.0.1:18080/conteudos
+Enviado: {"titulo": "Conteúdo 6", "corpo": "Texto do conteúdo 6", "autor": "Willian Batista"}
+Recebido: {"status": 201, "X-Cache": null, "tempoMs": 8.82, "corpo": {"id": 6, "titulo": "Conteúdo 6", "corpo": "Texto do conteúdo 6", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.5772517"}}
+2026-11-16T23:29:52.583618-03:00 | Cadastrar conteúdo 7
+POST http://127.0.0.1:18080/conteudos
+Enviado: {"titulo": "Conteúdo 7", "corpo": "Texto do conteúdo 7", "autor": "Willian Batista"}
+Recebido: {"status": 201, "X-Cache": null, "tempoMs": 9.56, "corpo": {"id": 7, "titulo": "Conteúdo 7", "corpo": "Texto do conteúdo 7", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.588028"}}
+
+02 - MISS e HIT
+2026-11-16T23:29:52.596021-03:00 | Limpar entradas do cache
+DELETE http://127.0.0.1:18080/cache
+Recebido: {"status": 204, "X-Cache": null, "tempoMs": 6.38, "corpo": null}
+2026-11-16T23:29:52.605083-03:00 | Primeira consulta - MISS
+GET http://127.0.0.1:18080/conteudos/1
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2116.06, "corpo": {"id": 1, "titulo": "Conteúdo 1", "corpo": "Texto do conteúdo 1", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.194954"}}
+2026-11-16T23:29:54.722707-03:00 | Segunda consulta - HIT
+GET http://127.0.0.1:18080/conteudos/1
+Recebido: {"status": 200, "X-Cache": "HIT", "tempoMs": 8.01, "corpo": {"id": 1, "titulo": "Conteúdo 1", "corpo": "Texto do conteúdo 1", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.194954"}}
+
+03 - Limite e LRU
+2026-11-16T23:29:54.732946-03:00 | Carregar conteúdo 2 - MISS
+GET http://127.0.0.1:18080/conteudos/2
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2034.51, "corpo": {"id": 2, "titulo": "Conteúdo 2", "corpo": "Texto do conteúdo 2", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.53053"}}
+2026-11-16T23:29:56.771546-03:00 | Carregar conteúdo 3 - MISS
+GET http://127.0.0.1:18080/conteudos/3
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2016.29, "corpo": {"id": 3, "titulo": "Conteúdo 3", "corpo": "Texto do conteúdo 3", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.545313"}}
+2026-11-16T23:29:58.789903-03:00 | Carregar conteúdo 4 - MISS
+GET http://127.0.0.1:18080/conteudos/4
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2018.25, "corpo": {"id": 4, "titulo": "Conteúdo 4", "corpo": "Texto do conteúdo 4", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.555405"}}
+2026-11-16T23:30:00.811145-03:00 | Carregar conteúdo 5 - MISS
+GET http://127.0.0.1:18080/conteudos/5
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2016.19, "corpo": {"id": 5, "titulo": "Conteúdo 5", "corpo": "Texto do conteúdo 5", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.565975"}}
+2026-11-16T23:30:02.830486-03:00 | Conferir tamanho 5
+GET http://127.0.0.1:18080/cache/estatisticas
+Recebido: {"status": 200, "X-Cache": null, "tempoMs": 12.38, "corpo": {"tamanhoAtual": 5, "limite": 5, "hits": 1, "misses": 5, "evictions": 0, "hitRatio": 0.16666666666666666}}
+2026-11-16T23:30:02.860270-03:00 | Acessar conteúdo 1 novamente - HIT
+GET http://127.0.0.1:18080/conteudos/1
+Recebido: {"status": 200, "X-Cache": "HIT", "tempoMs": 6.69, "corpo": {"id": 1, "titulo": "Conteúdo 1", "corpo": "Texto do conteúdo 1", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.194954"}}
+2026-11-16T23:30:02.868585-03:00 | Carregar conteúdo 6 - remove conteúdo 2
+GET http://127.0.0.1:18080/conteudos/6
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2052.89, "corpo": {"id": 6, "titulo": "Conteúdo 6", "corpo": "Texto do conteúdo 6", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.577252"}}
+2026-11-16T23:30:04.924548-03:00 | Conferir limite e eviction
+GET http://127.0.0.1:18080/cache/estatisticas
+Recebido: {"status": 200, "X-Cache": null, "tempoMs": 4.89, "corpo": {"tamanhoAtual": 5, "limite": 5, "hits": 2, "misses": 6, "evictions": 1, "hitRatio": 0.25}}
+2026-11-16T23:30:04.932061-03:00 | Conteúdo 1 foi preservado - HIT
+GET http://127.0.0.1:18080/conteudos/1
+Recebido: {"status": 200, "X-Cache": "HIT", "tempoMs": 6.95, "corpo": {"id": 1, "titulo": "Conteúdo 1", "corpo": "Texto do conteúdo 1", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.194954"}}
+2026-11-16T23:30:04.942377-03:00 | Conteúdo 2 foi removido - MISS
+GET http://127.0.0.1:18080/conteudos/2
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2012.51, "corpo": {"id": 2, "titulo": "Conteúdo 2", "corpo": "Texto do conteúdo 2", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.53053"}}
+
+04 - TTL
+2026-11-16T23:30:06.957421-03:00 | Carregar conteúdo 7 - MISS
+GET http://127.0.0.1:18080/conteudos/7
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2021.36, "corpo": {"id": 7, "titulo": "Conteúdo 7", "corpo": "Texto do conteúdo 7", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.588028"}}
+2026-11-16T23:30:08.982551-03:00 | Confirmar conteúdo 7 - HIT
+GET http://127.0.0.1:18080/conteudos/7
+Recebido: {"status": 200, "X-Cache": "HIT", "tempoMs": 7.9, "corpo": {"id": 7, "titulo": "Conteúdo 7", "corpo": "Texto do conteúdo 7", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.588028"}}
+Aguardando 61 segundos para a expiração por TTL.
+2026-11-16T23:31:10.022684-03:00 | Aguardar 61 segundos e consultar - MISS
+GET http://127.0.0.1:18080/conteudos/7
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2013.39, "corpo": {"id": 7, "titulo": "Conteúdo 7", "corpo": "Texto do conteúdo 7", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:29:52.588028"}}
+
+05 - Atualização
+2026-11-16T23:31:12.041450-03:00 | Atualizar conteúdo 7 e invalidar cache
+PUT http://127.0.0.1:18080/conteudos/7
+Enviado: {"titulo": "Conteúdo 7 atualizado", "corpo": "Texto alterado pelo autor", "autor": "Willian Batista"}
+Recebido: {"status": 200, "X-Cache": null, "tempoMs": 39.82, "corpo": {"id": 7, "titulo": "Conteúdo 7 atualizado", "corpo": "Texto alterado pelo autor", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:31:12.0494605"}}
+2026-11-16T23:31:12.084400-03:00 | Consultar após PUT - MISS e texto novo
+GET http://127.0.0.1:18080/conteudos/7
+Recebido: {"status": 200, "X-Cache": "MISS", "tempoMs": 2021.86, "corpo": {"id": 7, "titulo": "Conteúdo 7 atualizado", "corpo": "Texto alterado pelo autor", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:31:12.049461"}}
+2026-11-16T23:31:14.109687-03:00 | Repetir consulta - HIT
+GET http://127.0.0.1:18080/conteudos/7
+Recebido: {"status": 200, "X-Cache": "HIT", "tempoMs": 6.95, "corpo": {"id": 7, "titulo": "Conteúdo 7 atualizado", "corpo": "Texto alterado pelo autor", "autor": "Willian Batista", "atualizadoEm": "2026-11-16T23:31:12.049461"}}
+
+06 - Estatísticas finais
+2026-11-16T23:31:14.119235-03:00 | Consultar estatísticas finais
+GET http://127.0.0.1:18080/cache/estatisticas
+Recebido: {"status": 200, "X-Cache": null, "tempoMs": 4.79, "corpo": {"tamanhoAtual": 1, "limite": 5, "hits": 5, "misses": 10, "evictions": 3, "hitRatio": 0.3333333333333333}}
+
+07 - Exclusão e limpeza
+2026-11-16T23:31:14.126990-03:00 | Excluir conteúdo 7
+DELETE http://127.0.0.1:18080/conteudos/7
+Recebido: {"status": 204, "X-Cache": null, "tempoMs": 31.84, "corpo": null}
+2026-11-16T23:31:14.162873-03:00 | Consultar excluído - 404
+GET http://127.0.0.1:18080/conteudos/7
+Recebido: {"status": 404, "X-Cache": null, "tempoMs": 2075.29, "corpo": {"timestamp": "2026-11-17T02:31:16.227Z", "status": 404, "error": "Not Found", "path": "/conteudos/7"}}
+2026-11-16T23:31:16.241984-03:00 | Limpar cache
+DELETE http://127.0.0.1:18080/cache
+Recebido: {"status": 204, "X-Cache": null, "tempoMs": 5.3, "corpo": null}
+2026-11-16T23:31:16.251033-03:00 | Conferir tamanho zero
+GET http://127.0.0.1:18080/cache/estatisticas
+Recebido: {"status": 200, "X-Cache": null, "tempoMs": 6.74, "corpo": {"tamanhoAtual": 0, "limite": 5, "hits": 5, "misses": 11, "evictions": 3, "hitRatio": 0.3125}}
+
+RESULTADO: as 31 requisições da coleção foram executadas e os cenários obrigatórios foram confirmados.
+Compilação: docs/compilacao.txt. Oito testes existentes reaproveitados da execução aprovada com Spring Boot 4.0.9.
+Limitação: não há prints de Postman/Insomnia; as respostas HTTP e os logs são evidências reais complementares.
